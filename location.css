@@ -18,7 +18,6 @@ html {
 
 body {
     width: 100vw;
-    overflow-x: hidden;
 }
 
 /* back to home button styles */
@@ -211,16 +210,23 @@ body {
 /* DESKTOP STYLES */
 
 @media screen and (min-width: 1024px) {
+
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
     .map-container-tablet {
         display: none;
     }
 
     .map-container-desktop {
         display: block;
+        overflow-x: hidden;
     }
-    
+
     #map-tablet {
-        width: 100%
+        width: 100%;
     }
 
     .back-container {
