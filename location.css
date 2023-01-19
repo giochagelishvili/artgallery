@@ -18,6 +18,7 @@ html {
 
 body {
     width: 100vw;
+    overflow-x: hidden;
 }
 
 /* back to home button styles */
