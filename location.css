@@ -1,0 +1,244 @@
+.tablet-header, .desktop-header,
+#header-image-tablet, #your-day-image-tablet,
+.tablet, .your-day-tablet, .your-day-desktop,
+.grid-desktop, .footer-tablet, .map-container-tablet,
+.map-container-desktop, .location-footer-desktop,
+.address-container-tablet, .location-footer-tablet {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+}
+
+/* back to home button styles */
+
+.back-container,
+.back-container-tablet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+#arrow-left {
+    background-color: #D5966C;
+    padding: 2.4rem;
+}
+
+#back-to-home {
+    font-family: 'Big Shoulders Display';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: 3.63636px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 2.4rem 3.5rem 2.4rem 3.2rem;
+    background-color: #151515;
+}
+
+#map, #map-tablet {
+    width: 100%;
+}
+
+/* text styles */
+
+#our-location {
+    font-family: 'Big Shoulders Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 5rem;
+    line-height: 4.5rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+#location-main {
+    padding: 4.8rem 1.6rem 5.6rem 1.6rem;
+    background-color: black;
+}
+
+#street {
+    font-family: 'Big Shoulders Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    text-transform: uppercase;
+    color: #D5966C;
+
+    margin-top: 4.8rem;
+}
+
+.p-container {
+    margin-top: 2rem;
+}
+
+.p-container p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: #FFFFFF;
+}
+
+.p-container p:last-of-type {
+    margin-top: 1.25rem;
+}
+
+#location-footer {
+    background-color: #D5966C;
+    margin: 0;
+    padding: 4.8rem 3.2rem;
+}
+
+#footer-paragraph {
+    margin: 3.8rem 0;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: #151515;
+}
+
+.social-media-icon-container {
+    display: flex;
+    gap: 2rem;
+}
+
+/* TABLET STYLES */
+
+@media screen and (min-width: 768px) {
+    /* mobile map container is not displayed anymore */
+
+    .map-container {
+        display: none;
+    }
+
+    .map-container-tablet {
+        display: block;
+    }
+
+    /* back container div contains back to home button
+    we add margin left to it on tablet */
+
+    .back-container {
+        margin-left: 3.9rem;
+    }
+
+    /* !!! HERE ENDS HEADER STYLES !!! */
+    /* !!! HERE STARTS MAIN STYLES !!! */
+
+    /* padding increases on tablet */
+
+    #location-main {
+        padding: 8.8rem 4rem 8rem 3.9rem;
+    }
+
+    /* address container contained texts
+    suitable for mobile devices */
+
+    .address-container {
+        display: none;
+    }
+
+    .address-container-tablet {
+        display: flex;
+        align-items: flex-start;
+        gap: 6.8rem;
+    }
+
+    /* p container div contains paragraph
+    texts from address container */
+
+    .p-container-tablet {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .p-container-tablet p {
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        color: #FFFFFF;
+    }
+
+    #street {
+        margin: 0;
+    }
+
+    /* !!! HERE ENDS MAIN STYLES !!! */
+    /* !!! HERE STARTS FOOTER STYLES !!! */
+
+    .location-footer-mobile {
+        display: grid;
+        grid-template-columns: 0.8fr 1fr 1fr;
+    }
+
+    #footer-paragraph {
+        margin: 0;
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        color: #151515;
+    }
+
+    .social-media-icon-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+}
+
+/* DESKTOP STYLES */
+
+@media screen and (min-width: 1024px) {
+    .map-container-tablet {
+        display: none;
+    }
+
+    .map-container-desktop {
+        display: block;
+    }
+
+    .back-container {
+        margin-left: 15.6rem;
+    }
+
+    #location-main {
+        padding: 10rem;
+    }
+
+    .address-container-tablet {
+        justify-content: space-evenly;
+    }
+
+    #our-location {
+        width: 20rem;
+    }
+
+    #address-container-paragraph {
+        width: 54rem;
+    }
+
+    #location-footer {
+        padding: 8rem 12rem;
+    }
+}

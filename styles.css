@@ -1,0 +1,518 @@
+/* Global styles */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+    background-color: #FCFAF9;
+    overflow-x: hidden;
+}
+
+main {
+    padding: 0 1.6rem;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display';
+    font-style: normal;
+}
+
+p {
+    font-family: 'Outfit';
+    font-style: normal;
+}
+
+.tablet-header, .desktop-header,
+#header-image-tablet, #your-day-image-tablet,
+.tablet, .your-day-tablet, .your-day-desktop,
+.grid-desktop, .footer-tablet, .map-container-tablet,
+.map-container-desktop, .location-footer-desktop,
+.address-container-tablet, .location-footer-tablet {
+    display: none;
+}
+
+/* Header styles */
+
+#header-image {
+    width: 100%;
+}
+
+/* Header text including modern art 
+gallery and the paragraph text below it */
+
+.header-text-container {
+    padding: 0 1.6rem;
+    margin-top: 3.6rem;
+}
+
+#modern-art-gallery {
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    color: #151515;
+}
+
+#header-paragraph {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #444444;
+
+    margin-top: 3.2rem;
+}
+
+/* Our location button styles
+in the header */
+
+.our-location-container {
+    display: flex;
+    margin-top: 3.2rem;
+}
+
+/* our location button text styles */
+
+#our-location {
+    text-decoration: none;
+    font-family: 'Big Shoulders Display';
+    font-style: normal;   
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: 2.5px;
+
+    color: white;
+    background-color: #151515;
+
+    padding: 2rem 2.5rem 2rem 2.5rem;
+}
+
+/* arrow icon <a> styles */
+
+#arrow-icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5.6rem;
+    background-color: #D5966C;
+}
+
+/* Your day section styles */
+
+#your-day-section {
+    margin-top: 12rem;
+}
+
+#your-day-image {
+    width: 100%;
+}
+
+.your-day-text-container {
+    margin-top: 2.5rem;
+}
+
+/* your day at the gallery h1 
+styles */
+
+#your-day-at-the-gallery {
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    color: #151515;
+}
+
+/* paragraph in your day at the gallery
+section styles */
+
+#your-day-paragraph {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #444444;
+
+    margin-top: 2.1rem;
+}
+
+/* Grid section is the section with
+images after your day at the gallery section*/
+
+#grid-section {
+    margin-top: 3.2rem;
+}
+
+#grid-section img {
+    width: 100%;
+    margin-bottom: 1.6rem;
+}
+
+.come-and-be-inspired-container {
+    padding: 2rem 1.5rem;
+    background-color: black;
+}
+
+#come-and-be-inspired, #be-inspired-paragraph{
+    color: white;
+}
+
+#come-and-be-inspired {
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+#be-inspired-paragraph{
+    margin-top: 2.4rem;
+
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #FFFFFF;  
+}
+
+/* Footer styles */
+
+footer {
+    margin-top: 12rem;
+    padding: 3rem 2rem;
+    background-color: black;
+}
+
+#footer-paragraph {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #FFFFFF;
+
+    margin-top: 3.8rem;
+}
+
+.social-media-icon-container {
+    margin-top: 3.8rem;
+    display: flex;
+    column-gap: 2rem;
+}
+
+@media screen and (min-width: 375px) {
+    #modern-art-gallery,
+    #your-day-at-the-gallery,
+    #come-and-be-inspired {
+        font-size: 5rem;
+        line-height: 4.5rem;
+    }
+
+    #header-paragraph,
+    #your-day-paragraph,
+    #be-inspired-paragraph {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+
+    #footer-paragraph {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+
+    .come-and-be-inspired-container {
+        padding: 4.8rem 2.4rem 4.7rem 2.4rem;
+    }
+}
+
+/* TABLET STYLES */
+
+@media screen and (min-width: 768px) {
+    .mobile-header {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    /* tablet header styles
+    this includes image, modern art gallery
+    h1, paragraph below it and our location button*/
+
+    .tablet-header {
+        display: flex;
+        overflow-x: hidden;
+    }
+
+    #header-image-tablet {
+        display: block;
+        width: 43.7rem;
+    }
+
+    .header-text-container {
+        margin: 0;
+    }
+
+    /* modern art gallery heading styles */
+
+    #modern-art-gallery-tablet {
+        font-weight: 900;
+        font-size: 7rem;
+        line-height: 6.5rem;
+        text-transform: uppercase;
+        color: #151515;
+
+        margin-top: 14.5rem;
+        width: 40rem;
+
+        position: relative;
+        left: -6.5rem
+    }
+
+    /* paragraph styles */
+
+    #header-paragraph-tablet {
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        color: #444444;
+
+        margin: 4.8rem 0;
+        width: 33.9rem;
+
+        position: relative;
+        left: -6.5rem;
+    }
+
+    /* our location button styles */
+
+    .our-location-container {
+        position: relative;
+        left: -6.5rem;
+    }
+
+    /* !!! HEADER STYLES END HERE !!! */
+    /* !!! MAIN STYLES START HERE !!! */
+
+    .your-day-mobile {
+        display: none;
+    }
+
+    /* left and right padding increases on tablet */
+
+    #your-day-section {
+        padding: 0 4rem;
+    }
+
+    /* this div contains your day at the gallery
+    heading, paragraph and image */
+
+    .your-day-tablet {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+
+    #your-day-image-tablet {
+        display: block;
+        width: 39.8rem;
+    }
+
+    /* !!! HERE STARTS GRID STYLES !!! */
+
+    /* left and right padding increase on tablet */
+
+    #grid-section {
+        padding: 0 4rem;
+    }
+
+    /* images in grid section had bottom margin on mobile
+    we don't need it anymore so we get rid of it */
+
+    #grid-section img {
+        margin: 0;
+    }
+
+    /* tablet div contains left and right side of the grid */
+
+    .tablet {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        column-gap: 1.1rem;
+    }
+
+    /* right side div contains little image on the right
+    of the grid and come and be inspired 
+    text container on the bottom */
+
+    .right-side-tablet {
+        display: grid;
+        grid-template-rows: max-content;
+        gap: 1.1rem;
+    }
+
+    /* grid 3 tablet contains come and be inspired text */
+
+    #grid-3-tablet {
+        background-color: #151515;
+        padding: 8.5rem 2.7rem 8.5rem 2.7rem;
+    }
+
+    /* !!! HERE ENDS MAIN STYLES !!! */
+    /* !!! HERE STARTS FOOTER STYLES !!! */
+
+    /* footer padding increases on tablet */
+
+    footer {
+        padding: 5.6rem 4rem 5.6rem 3.9rem;
+    }
+
+    .footer-tablet {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 0.5fr;
+    }
+
+    /* footer paragraph styles */
+
+    #footer-p-tablet {
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        color: #FFFFFF;
+    }
+
+    .icon-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        gap: 2rem;
+    }
+}
+
+/* DESKTOP STYLES */
+
+@media screen and (min-width: 1024px) {
+    /* we get rid of tablet header here */
+
+    .tablet-header {
+        display: none;
+    }
+
+    /* desktop header is displayed as grid */
+
+    .desktop-header {
+        display: grid;
+        grid-template-columns: 0.7fr 1fr 0.7fr;
+    }
+
+    /* header image contains photo of a man and woman 
+    in front of painting */
+
+    #header-image-desktop {
+        width: 100%;
+    }
+
+    /* black div is the black space left of the 
+    header, it also contains MODERN ART GALLERY logo */
+
+    #black {
+        background-color: #151515;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    /* header logo contains modern art gallery logo */
+
+    #header-logo {
+        width: 35rem;
+
+        position: relative;
+        right: -13rem;
+
+        mix-blend-mode: difference;
+    }
+
+    /* header text container contains header 
+    paragraph and our location button */
+
+    .header-text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0;
+    }
+
+    #header-paragraph {
+        position: relative;
+        left: -6.5rem;
+        width: 35rem;
+    }
+
+    .our-location-container {
+        position: relative;
+        left: -6.5rem;
+    }
+
+    /* !!! HEADER STYLES END HERE !!! */
+    /* !!! MAIN STYLES START HERE !!! */
+
+    .your-day-tablet {
+        display: none;
+    }
+
+    .your-day-desktop {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12.5rem;
+    }
+
+    #your-day-image-desktop {
+        width: 50rem;
+        float: right;
+    }
+
+    #your-day-paragraph {
+        width: 29rem;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .grid-desktop {
+        display: grid;
+        align-items: stretch;
+        gap: 3rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .right-side-desktop {
+        display: grid;
+        grid-template-rows: 0.5fr 1fr;
+        gap: 3rem;
+    }
+}
+
+@media screen and (min-width: 1335px) {
+    main {
+        padding: 0 16.5rem;
+    }
+
+    #your-day-image-desktop {
+        width: 50rem;
+    }
+}
