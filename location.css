@@ -218,6 +218,10 @@ body {
     .map-container-desktop {
         display: block;
     }
+    
+    #map-tablet {
+        width: 100%
+    }
 
     .back-container {
         margin-left: 15.6rem;
