@@ -7,4 +7,8 @@ After discovering the design on Figma, I got to work on crafting a homepage that
 
 In the end, I am extremely pleased with the outcome and feel that the experience helped me to grow as a developer.
 
+<h1>Overview</h1>
+
+<img src="https://iili.io/HOdXVyu.md.png">
+
 <a href="https://giochagelishvili.github.io/artgallery/">Click here to see the website</a>
